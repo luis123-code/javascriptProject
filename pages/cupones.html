@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cupones</title>
+  <link rel="icon" href="./img/icns/software-developer-icon-free-vector.jpg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+        .textColor { color: #f3ecec !important; }
+    .textColor:hover { color: #fff !important; }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #712cf9 !important;">
+  <div class="container">
+<a class="navbar-brand" href="/">Mi App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link textColor" href=".html"></a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/cupones.html">Cupones</a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/figuraGeometrica.html">Figura Geométrica</a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/administradorCitas.html">Administrador de Citas</a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/gastoSemanal.html">Gasto Semanal</a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/prototitoSeguro.html">Prototipo</a></li>>
+        <li class="nav-item"><a class="nav-link textColor" href=".html"></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- CONTENIDO PRINCIPAL -->
+<main class="container my-5" style="max-width: 600px;">
+  <h3 class="text-center mb-4">
+    <i class="bi bi-tag text-primary me-2"></i>Gestión de Descuentos
+  </h3>
+
+  <section class="mb-5">
+    <h4 class="h5 mb-3">Cupones disponibles</h4>
+    <div class="informacionCupones border p-3 rounded bg-light"></div>
+  </section>
+
+  <section>
+    <form class="form p-4 border rounded bg-white shadow-sm">
+      <div class="mb-3">
+        <label for="txtCupon" class="form-label">Código del cupón</label>
+        <input type="text" class="form-control txtCupon" id="txtCupon" />
+      </div>
+
+      <div class="mb-3">
+        <label for="txtCosto" class="form-label">Costo del producto</label>
+        <input type="number" class="form-control txtCosto" id="txtCosto" />
+      </div>
+
+      <div class="mb-3">
+        <label for="valor" class="form-label">Tipo de pago</label>
+        <select id="valor" class="form-select txtelegir">
+          <option value="">Seleccione</option>
+          <option value="Contado">Contado</option>
+          <option value="Por partes">Por partes</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <input type="text" class="form-control txtValor" placeholder="Ingrese el valor" />
+      </div>
+
+      <div class="informacion_dato mb-3"></div>
+
+      <div class="d-flex gap-2">
+        <input type="submit" class="btn btn-primary button" value="Aplicar cupón" disabled />
+        <input type="reset" class="btn btn-secondary reseteo" value="Limpiar" />
+      </div>
+
+      <div class="mensaje mt-3"></div>
+    </form>
+
+    <article class="enviandoInformacion text-center my-4">
+      <div class="sk-folding-cube spiknet">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </article>
+
+    <article class="resultadoInformacion mt-4"></article>
+  </section>
+</main>
+
+
+
+  <!-- JS -->
+  <script src="../js/cupones/app_Bd.js"></script>
+  <script src="../js/cupones/script.js"></script>
+  <script src="../js/cupones/script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

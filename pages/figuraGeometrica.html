@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Figuras Geométricas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+    .textColor { color: #f3ecec !important; }
+    .textColor:hover { color: #fff !important; }
+    </style>
+
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #712cf9 !important;">
+  <div class="container">
+<a class="navbar-brand" href="/">Mi App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link textColor" href=".html"></a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/cupones.html">Cupones</a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/figuraGeometrica.html">Figura Geométrica</a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/administradorCitas.html">Administrador de Citas</a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/gastoSemanal.html">Gasto Semanal</a></li>
+        <li class="nav-item"><a class="nav-link textColor" href="/pages/prototitoSeguro.html">Prototipo</a></li>>
+        <li class="nav-item"><a class="nav-link textColor" href=".html"></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- MAIN -->
+  <main class="container my-5">
+    <section class="bg-white p-4 rounded shadow-sm">
+      <h4 class="text-center mb-4 text-primary">
+        <i class="bi bi-hexagon-half me-2"></i>Calculadora de Figuras Geométricas
+      </h4>
+
+      <form>
+        <div class="row g-3">
+
+          <!-- Dato principal -->
+          <div class="col-md-6">
+            <label for="datoPrincipal" class="form-label">Ingrese el dato</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+              <input type="text" class="form-control" id="datoPrincipal" placeholder="Ej: Lado, radio, etc.">
+            </div>
+          </div>
+
+          <!-- Número asociado -->
+          <div class="col-md-6">
+            <label for="numeroAsociado" class="form-label">Ingrese el número asociado</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-123"></i></span>
+              <input type="number" class="form-control" id="numeroAsociado" placeholder="Ej: 5, 10, 20">
+            </div>
+          </div>
+
+          <!-- Selector de figura -->
+          <div class="col-12">
+            <label for="figuraSelect" class="form-label">Seleccione la figura</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-diagram-3"></i></span>
+              <select class="form-select" id="figuraSelect">
+                <option selected disabled>Seleccione una figura</option>
+                <option value="cuadrado">Cuadrado</option>
+                <option value="rectangulo">Rectángulo</option>
+                <option value="triangulo">Triángulo</option>
+                <option value="circulo">Círculo</option>
+                <option value="rombo">Rombo</option>
+                <option value="trapecio">Trapecio</option>
+                <option value="paralelogramo">Paralelogramo</option>
+                <option value="hexagono">Hexágono</option>
+                <option value="pentagono">Pentágono</option>
+                <option value="elipse">Elipse</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Resultado -->
+          <div class="col-12 mt-4">
+            <div class="alert alert-info resultado" role="alert">
+              <i class="bi bi-info-circle me-2"></i>
+              Aquí se mostrará el resultado del cálculo.
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/figuras Geometrica/app.js"></script>
+</body>
+</html>

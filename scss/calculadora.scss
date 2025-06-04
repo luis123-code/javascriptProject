@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    
+    .calculadora{
+
+        margin: 0 auto;
+    }
+    .resultado{
+        border: 1px solid black;
+        width:16%;
+        height: 30px;
+    }
+
+
+.formulario {
+    height: 200px;
+    .valores{
+        margin: 5px;
+        padding: 10px;
+        border-radius: 1em;
+    }
+}
+}
